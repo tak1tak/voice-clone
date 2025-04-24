@@ -2,7 +2,8 @@ model = "F5TTS_v1_Base"
 
 ref_audio = "aman.wav"
 
-ref_text = "For ourselves. Okay. Now if you show up, there are some options. So it it says find by district and then there is calendar by district. Now calendar by district just gives you, you know, the vaccination sessions by district for seven days. Now you can either go with that or you can just go by like, you know, find by district. You're gonna click on try out and you're gonna click on execute. Also there is stuff here you can edit it from here if you want but I just find that the URL is super easy. Copy and then paste. Now this is for five and two. I don't know what"
+ref_text = "You know, sorry collapse them in like this and it might be easier. Now if let's say you wanna find a specific"
+
 gen_text = "I don't really care what you call me. I've been a silent spectator, watching species evolve, empires rise and fall. But always remember, I am mighty and enduring."
 
 gen_file = ""
