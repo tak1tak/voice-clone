@@ -16,5 +16,5 @@ pip install f5-tts
 
 ## run application 
 ```
-f5-tts_infer-gradio
+python cli-app.py --gen_text "This is a TTS test."
 ```
