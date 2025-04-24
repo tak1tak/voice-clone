@@ -1,0 +1,15 @@
+model = "F5TTS_v1_Base"
+
+ref_audio = "examples/basic/basic_ref_en.wav"
+
+ref_text = "Some call me nature, others call me mother nature."
+
+gen_text = "I don't really care what you call me. I've been a silent spectator, watching species evolve, empires rise and fall. But always remember, I am mighty and enduring."
+
+gen_file = ""
+
+remove_silence = false
+
+output_dir = "./"
+
+output_file = "infer_cli_basic.wav"
