@@ -31,6 +31,9 @@ from f5_tts.infer.utils_infer import (
 )
 
 
+with open("aman.txt") as fi:
+    text_input = fi.read()
+
 parser = argparse.ArgumentParser(
     prog="python3 infer-cli.py",
     description="Commandline interface for E2/F5 TTS with Advanced Batch Processing.",
@@ -83,7 +86,7 @@ parser.add_argument(
     "-s",
     "--ref_text",
     type=str,
-    default="Some call me nature, others call me mother nature.",
+    default=text_input,
     help="The transcript/subtitle for the reference audio",
 )
 parser.add_argument(
