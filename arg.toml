@@ -1,6 +1,6 @@
 model = "F5TTS_v1_Base"
 
-ref_audio = "examples/basic/basic_ref_en.wav"
+ref_audio = "aman.wav"
 
 ref_text = "Some call me nature, others call me mother nature."
 
