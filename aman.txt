@@ -1,0 +1,311 @@
+hey people uh aman here
+so given the current situation of the
+world uh vaccines are going on obviously
+in india
+uh above 18 vaccines are already up but
+the problem that we all have been facing
+is that you can register but you cannot
+find a slot
+open for the vaccine and every single
+time you have to check for that you have
+to register
+like you have to log in again through
+the odb and we all know how the otp
+system
+went on last time and you have to check
+for slot again and again
+so i was initially planning of uh
+planning to make a python program
+and i was supposed to teach how the
+python program would work to figure out
+the vaccination slots and everything
+but then i figured that i could directly
+use the api
+and i could directly show it to you guys
+about how it works and it's actually
+more easier
+to uh like you know show how it works
+okay
+so let's get into that before that i
+just have a small announcement to make
+we
+have our own telegram channel easterly
+telegram channel
+so we have you know technology stuff
+apps and
+you know general news and all that stuff
+so
+once again make sure you uh like
+register on the telegram channel if you
+have a telegram account
+the link will be in the description
+every other links which we use
+will also be in the degree description
+so let's just get started
+okay so for this uh you will need a
+browser
+obviously and internet okay and the
+first thing that you're gonna need is in
+your chrome browser or brave browser
+whatever browser you use
+you need to download this extension json
+formatter
+now if you do not have this extension
+the data is not going to make sense and
+you're going to have a really tough time
+you know figuring out what is what so
+make sure you get this extension
+link is in the description okay next
+there are some apis provided by the
+government
+by the indian government and we will be
+using those apis to figure out
+uh the data like we'll be figuring out
+what vaccination slots are open
+what vaccines are provided what is the
+current limit of the vaccine like you
+know what's
+the amount of people they can handle and
+all that stuff so
+this is the url it's api c2 dot
+gov dot in slash public slash api slash
+coven
+okay so once again once you show up on
+this page
+there's a lot of stuff it might be
+overwhelming
+do not get over once again it's like
+super easy stuff and
+api is basically uh it's like you are
+making a request
+to a specific application and you are
+getting a response back that's all an
+api is if you think about it so
+for this api what we'll be doing is uh
+that
+let's just start with the states or the
+api okay it just makes more sense
+so we'll go to this api and you have to
+click on try it out so you'll get a link
+if you click on execute this is the link
+that you get so
+if you copy this link and then you open
+up a new tab paste it and enter
+you get a list of all these states okay
+this is the
+like all the states that we have in uh
+india plus the union territories
+and uh if you do not have the json
+formatter this is how the data will look
+and it's messy so json formatter
+obviously makes
+things really easy for you and you can
+also like you know do this
+which is easier so i'll just focus on
+gujarat because
+i live in gujarat so we'll see the state
+id for gujarat is 11.
+so we'll just remember that we'll come
+back here
+uh we found the states now we need the
+districts
+all the districts available in that
+state so we'll just click on try
+and then we'll click on execute so we
+can get this link so this is our request
+url we're going to copy
+open a new tab and enter now obviously
+this is
+for state id 16 uh whatever state id 16
+that is karnataka we don't need it for
+karnataka i'm gonna search for gujarat
+so that would be 11.
+guys make sure that you are changing
+this the last
+part of the url i'm going to hit enter
+and now we have all the districts
+present
+in gujarat okay
+and so on let's try for m
+okay so now you have to focus on
+district id because this stuff
+this is more important so this is what
+we'll be using in the next
+api okay so it's district id 154
+now if there are okay let's not get
+ahead of ourselves
+uh okay now if you show up there are
+some options so it
+it says find by district and then there
+is calendar by district
+now calendar by district just gives you
+you know the
+vaccination sessions by district for
+seven days
+now you can either go with that or you
+can just go by
+like you know find by district uh you're
+gonna click on try
+out and you're gonna click on execute
+also there's stuff here you can edit it
+from here if you want but
+i just find that the url is super easy
+copy
+and then paste now this is for
+five and two i don't know what district
+that is i think that's for
+a district alvarez rajasthan yeah okay
+so obviously we're going to change the
+district id so let's see what was the
+district id for amdavad
+154. so we're going to change this to
+154 and we're gonna also change the date
+obviously so today's date when i'm
+recording this it's 8th
+may so i'm gonna change that may is the
+fifth
+month and enter so this is what you get
+you get all the information for
+m area so now okay this might look
+really like you know oh my god what is
+this well there's so many stuff
+so that is why we use json formatter so
+sessions here just means that it's
+different places in ahmedabad
+where you can get the vaccine okay so
+for example
+this might be the first place uh then
+this might be the second place
+and so on and so forth so these are
+sessions so what you can do is you can
+you know try to combine them
+like you know sorry collapse them in
+like this
+and it might be easier now if let's say
+you want to find a specific
+place and uh like how would you like go
+through this data
+once again it's like super easy you just
+do ctrl
+f and you just search for whatever
+station you like whatever center you
+want so
+that's how it works also let's now try
+to understand the information given
+inside
+okay so the first center id uh it's
+id they have i don't know why it's
+nothing it's not of
+use to us the name of the station
+the address state name gujarat obviously
+a district name amdavad block name
+baula pin code is given now
+if you notice here you can also search
+by pin code
+okay find by pin uh if we'll just go
+through that
+if that is what you are into go ahead
+it's super easy you just have to change
+the pin code if you don't want to do the
+pin one
+thing okay so you can just come here
+i'll just try for my pin code
+and i'll just change the date to today
+in my experience the pin code thing
+sometimes works sometimes
+doesn't so just go through the district
+thing it's much more easier
+and it gives you consistent results okay
+so where wherever yeah
+so pin code it shows you the pin code it
+shows you the time so it's
+morning nine to evening five it gives
+you latitude and longitude i think
+that's
+really approximate uh uh it gives you a
+fee type if the vaccine costs anything
+it's free
+uh there's the date session id once
+again we have it's not
+of use to us available capacity that is
+46
+fee is zero obviously it's free
+uh minimum age limit is 45 so now if you
+want to search it
+for like you know above 18
+one thing you can just do is just put 18
+here
+and obviously it will give you the like
+you know the time
+18 sometimes but i think it's easier to
+just pass through this and just check
+where's the minimum age limit and uh
+apparently there isn't huh
+apparently we don't have abu 18 uh
+vaccines at this point
+but see that this is why we are
+searching okay so you can do
+the same thing and you can do it for any
+other district you want
+and yeah that's it you just have this
+information
+now the calendar thing you can obviously
+do that as well let's do calendar by pin
+we're gonna try it out and we're gonna
+execute so
+we have this link we're gonna copy
+paste oh i i think i did it
+calendar by pin code let's do calendar
+by district try it out
+execute here we have our link
+you open up a new tab and obviously
+we'll have to change
+uh what was the district 154
+let's try amd about cooperation that's
+770 right
+770 and let's just put in today's date
+so we can get like you know some idea of
+the future
+and five and enter let's see
+okay so we have the same thing now
+the thing that depends is like now you
+have centers instead of
+session and once you notice there's a
+session and
+inside that like for example there is a
+center and inside that there are
+different sessions okay so that will be
+different dates
+so for example this session uh
+daria i hope i'm pronouncing that right
+you have the data for eight and you have
+the data for nine
+then you show up for this center
+and there's only one session apparently
+then you
+show up for kendra vidyalay then you
+have a session for 8th and then 9th
+and so on and so forth i think it's
+because of saturday and sunday i might
+be wrong
+but yeah so the more you search you'll
+kind of figure it out
+so yeah basically that's it uh i hope
+this made sense once again if you want
+me to make a python program for this
+it's really not a big deal apparently
+you just have to like you know get this
+data and then
+parse it that's it that's what this
+extension is doing apparently
+so yeah python program would just
+basically it will just ask you for the
+details and it will just you know give
+you
+the output in a really nice form that's
+it but you will have to run the python
+program on your system natively
+so there's that issue but yeah that's it
+i hope this vaccination tracker thingy
+works for you
+and yeah that's it
