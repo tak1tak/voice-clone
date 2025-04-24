@@ -16,5 +16,5 @@ pip install f5-tts
 
 ## run application 
 ```
-python cli-app.py --gen_text "This is a TTS test."
+python cli-app.py
 ```
