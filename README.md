@@ -1,8 +1,5 @@
 # voice-clone
 
-Make sure that you provide 2 files in same folder which i will provide you.
-if i can i will be able to upload this in repo too.
-
 ## Install ffmpeg
 https://ffmpeg.org/download.html
 
